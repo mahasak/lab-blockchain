@@ -5,7 +5,7 @@ var bodyParser = require('body-parser');
 var WebSocket = require("ws");
 
 var http_port = process.env.HTTP_PORT || 3001;
-var p2p_port = process.env.P2P_PORT || 6001;
+var p2p_port = process.env.P2P_PORT || 3002;
 var initialPeers = process.env.PEERS ? process.env.PEERS.split(',') : [];
 
 class Block {
